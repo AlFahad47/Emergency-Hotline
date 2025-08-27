@@ -16,12 +16,20 @@
 
     <!-- tailwind css cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body>
+  <body class="bg-[#F5FFF6]">
     <!-- navbar -->
     <header>
       <nav
-        class="flex flex-col lg:flex-row justify-between items-center py-[25px] px-[60px] max-w-[1920px] mx-auto"
+        class="flex flex-col lg:flex-row justify-between items-center py-[25px] px-[60px] max-w-[1920px] mx-auto bg-white"
       >
         <div class="flex items-center">
           <img class="h-[50px] mr-[10px]" src="./assets/logo.png" alt="" />
@@ -76,11 +84,57 @@
     </section>
 
     <!-- main section -->
-    <main>
+    <main
+      class="flex lg:flex-row flex-col max-w-[1800px] lg:mx-auto gap-8 mt-12 mx-4"
+    >
       <!-- Card Section	 -->
-      <section></section>
+      <section class="border-1 border-red-800 h-[40vh] lg:min-w-[1370px]">
+        <!-- card -->
+        <div
+          class="max-w-[436px] p-8 bg-white shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl"
+        >
+          <div class="flex justify-between items-center">
+            <img
+              class="w-[60px] p-[14px] bg-[#FFE3E2] rounded-2xl"
+              src="./assets/emergency.png"
+              alt=""
+            /><i
+              class="fa-regular fa-heart text-[24px]"
+              style="color: #5c5c5c"
+            ></i>
+          </div>
+          <div>
+            <div class="mt-4">
+              <h2 class="hind-madurai font-bold text-2xl">জাতীয় জরুরি সেবা</h2>
+              <p class="roboto font-normal text-lg text-[#5C5C5C]">
+                National Emergency
+              </p>
+            </div>
+            <div class="my-6">
+              <h2 class="roboto font-bold text-2xl">999</h2>
+              <h3
+                class="inline-block hind-madurai text-lg font-normal text-[#5C5C5C] py-[6px] px-4 bg-[#F2F2F2] rounded-full"
+              >
+                সার্বজনীন
+              </h3>
+            </div>
+            <div class="flex gap-2 justify-between items-center">
+              <button
+                class="roboto font-normal text-[16px] btn border-[#D4D6D5] rounded-lg w-[calc(50%-4px)] bg-white"
+              >
+                <img class="max-w-4" src="./icons/copy.png" alt="" />Copy
+              </button>
+              <button
+                class="roboto font-normal text-[16px] btn border-0 bg-[#00A63E] text-white rounded-lg w-[calc(50%-4px)]"
+              >
+                <img src="./icons/call.png" alt="" />Call
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- History Section -->
-      <section></section>
+      <section class="border-1 border-blue-700 lg:min-w-[400px]"></section>
     </main>
     <script src="./index.js"></script>
   </body>
