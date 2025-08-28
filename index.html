@@ -95,7 +95,7 @@
     >
       <!-- Card Section	 -->
       <section
-        class="flex flex-row flex-wrap items-center justify-center gap-6 border-1 border-red-800 max-w-[1370px] lg:min-w-[1370px]"
+        class="flex flex-row flex-wrap items-center justify-center gap-6 max-w-[1370px] lg:min-w-[1370px]"
       >
         <!-- card 1 -->
         <div
@@ -498,8 +498,25 @@
         </div>
       </section>
       <!-- History Section -->
-      <section class="border-1 border-blue-700 lg:min-w-[400px]">
-        <h2>histroy section</h2>
+      <section
+        class="lg:min-w-[400px] bg-white shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl"
+      >
+        <div class="flex justify-between mt-6 mb-4 mx-6">
+          <div class="flex gap-2 items-center">
+            <i class="fa-solid fa-clock text-[24px]" style="color: #5c5c5c"></i>
+            <h2 class="roboto font-medium text-xl">Call History</h2>
+          </div>
+          <button
+            id="clear-history-btn"
+            class="rounded-[50px] py-[24px] px-[30px] btn text-white bg-[#00A63E] border-0 inter font-semibold text-[1rem]"
+          >
+            Clear
+          </button>
+        </div>
+        <!-- history cell -->
+        <div id="history-container">
+          <!-- cell -->
+        </div>
       </section>
     </main>
     <script src="./index.js"></script>
