@@ -37,14 +37,21 @@ for (const copyBtn of copyBtns) {
 
 // calling features
 
+//
+let starCoin = parseInt(document.getElementById("star-coin").innerText);
 const callBtns = document.getElementsByClassName("call-btn");
-
+console.log(starCoin);
 for (const callBtn of callBtns) {
   callBtn.addEventListener("click", function () {
     const emergencyCard = callBtn.closest(".emergency-card");
     const number = emergencyCard.querySelector(".number").innerText;
     const subName = emergencyCard.querySelector(".sub-name").innerText;
-
-    alert("📞 Calling " + subName + " " + number + "...");
+    if (starCoin >= 20) {
+      starCoin = starCoin - 20;
+      alert("📞 Calling " + subName + " " + number + "...");
+      document.getElementById("star-coin").innerText = starCoin;
+    } else {
+      alert("❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে ২০ কয়েন লাগবে।");
+    }
   });
 }
