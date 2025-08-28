@@ -34,3 +34,17 @@ for (const copyBtn of copyBtns) {
     document.getElementById("copy-counter").innerText = copyCounter;
   });
 }
+
+// calling features
+
+const callBtns = document.getElementsByClassName("call-btn");
+
+for (const callBtn of callBtns) {
+  callBtn.addEventListener("click", function () {
+    const emergencyCard = callBtn.closest(".emergency-card");
+    const number = emergencyCard.querySelector(".number").innerText;
+    const subName = emergencyCard.querySelector(".sub-name").innerText;
+
+    alert("📞 Calling " + subName + " " + number + "...");
+  });
+}
