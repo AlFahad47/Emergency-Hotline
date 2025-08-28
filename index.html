@@ -88,10 +88,12 @@
       class="flex lg:flex-row flex-col max-w-[1800px] lg:mx-auto gap-8 mt-12 mx-4"
     >
       <!-- Card Section	 -->
-      <section class="border-1 border-red-800 h-[40vh] lg:min-w-[1370px]">
-        <!-- card -->
+      <section
+        class="flex flex-row flex-wrap items-center justify-center gap-6 border-1 border-red-800 max-w-[1370px] lg:min-w-[1370px]"
+      >
+        <!-- card 1 -->
         <div
-          class="max-w-[436px] p-8 bg-white shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl"
+          class="max-w-[432px] min-w-[335px] lg:max-w-none lg:w-[436px] p-8 bg-white shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl"
         >
           <div class="flex justify-between items-center">
             <img
@@ -105,36 +107,395 @@
           </div>
           <div>
             <div class="mt-4">
-              <h2 class="hind-madurai font-bold text-2xl">জাতীয় জরুরি সেবা</h2>
-              <p class="roboto font-normal text-lg text-[#5C5C5C]">
+              <h2 class="name hind-madurai font-bold text-2xl">
+                জাতীয় জরুরি সেবা
+              </h2>
+              <p class="sub-name roboto font-normal text-lg text-[#5C5C5C]">
                 National Emergency
               </p>
             </div>
             <div class="my-6">
-              <h2 class="roboto font-bold text-2xl">999</h2>
+              <h2 class="number roboto font-bold text-2xl">999</h2>
               <h3
-                class="inline-block hind-madurai text-lg font-normal text-[#5C5C5C] py-[6px] px-4 bg-[#F2F2F2] rounded-full"
+                class="category inline-block hind-madurai text-lg font-normal text-[#5C5C5C] py-[6px] px-4 bg-[#F2F2F2] rounded-full"
               >
                 সার্বজনীন
               </h3>
             </div>
             <div class="flex gap-2 justify-between items-center">
               <button
-                class="roboto font-normal text-[16px] btn border-[#D4D6D5] rounded-lg w-[calc(50%-4px)] bg-white"
+                class="copy-btn roboto font-normal text-[16px] btn border-[#D4D6D5] rounded-lg w-[calc(50%-4px)] bg-white"
               >
                 <img class="max-w-4" src="./icons/copy.png" alt="" />Copy
               </button>
               <button
-                class="roboto font-normal text-[16px] btn border-0 bg-[#00A63E] text-white rounded-lg w-[calc(50%-4px)]"
+                class="call-btn roboto font-normal text-[16px] btn border-0 bg-[#00A63E] text-white rounded-lg w-[calc(50%-4px)]"
               >
-                <img src="./icons/call.png" alt="" />Call
+                <img src="./icons/telephone.png" class="w-4" alt="" />Call
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div
+          class="max-w-[432px] min-w-[335px] lg:max-w-none lg:w-[436px] p-8 bg-white shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl"
+        >
+          <div class="flex justify-between items-center">
+            <img
+              class="w-[60px] p-[14px] bg-[#FFE3E2] rounded-2xl"
+              src="./assets/police.png"
+              alt=""
+            /><i
+              class="heart-icon fa-regular fa-heart text-[24px]"
+              style="color: #5c5c5c"
+            ></i>
+          </div>
+          <div>
+            <div class="mt-4">
+              <h2 class="name hind-madurai font-bold text-2xl">পুলিশ</h2>
+              <p class="sub-name roboto font-normal text-lg text-[#5C5C5C]">
+                Police
+              </p>
+            </div>
+            <div class="my-6">
+              <h2 class="number roboto font-bold text-2xl">999</h2>
+              <h3
+                class="category inline-block hind-madurai text-lg font-normal text-[#5C5C5C] py-[6px] px-4 bg-[#F2F2F2] rounded-full"
+              >
+                পুলিশ
+              </h3>
+            </div>
+            <div class="flex gap-2 justify-between items-center">
+              <button
+                class="copy-btn roboto font-normal text-[16px] btn border-[#D4D6D5] rounded-lg w-[calc(50%-4px)] bg-white"
+              >
+                <img class="max-w-4" src="./icons/copy.png" alt="" />Copy
+              </button>
+              <button
+                class="call-btn roboto font-normal text-[16px] btn border-0 bg-[#00A63E] text-white rounded-lg w-[calc(50%-4px)]"
+              >
+                <img src="./icons/telephone.png" class="w-4" alt="" />Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div
+          class="max-w-[432px] min-w-[335px] lg:max-w-none lg:w-[436px] p-8 bg-white shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl"
+        >
+          <div class="flex justify-between items-center">
+            <img
+              class="w-[60px] p-[14px] bg-[#FFE3E2] rounded-2xl"
+              src="./assets/fire-service.png"
+              alt=""
+            /><i
+              class="heart-icon fa-regular fa-heart text-[24px]"
+              style="color: #5c5c5c"
+            ></i>
+          </div>
+          <div>
+            <div class="mt-4">
+              <h2 class="name hind-madurai font-bold text-2xl">
+                ফায়ার সার্ভিস
+              </h2>
+              <p class="sub-name roboto font-normal text-lg text-[#5C5C5C]">
+                Fire Service
+              </p>
+            </div>
+            <div class="my-6">
+              <h2 class="number roboto font-bold text-2xl">999</h2>
+              <h3
+                class="category inline-block hind-madurai text-lg font-normal text-[#5C5C5C] py-[6px] px-4 bg-[#F2F2F2] rounded-full"
+              >
+                ফায়ার
+              </h3>
+            </div>
+            <div class="flex gap-2 justify-between items-center">
+              <button
+                class="copy-btn roboto font-normal text-[16px] btn border-[#D4D6D5] rounded-lg w-[calc(50%-4px)] bg-white"
+              >
+                <img class="max-w-4" src="./icons/copy.png" alt="" />Copy
+              </button>
+              <button
+                class="call-btn roboto font-normal text-[16px] btn border-0 bg-[#00A63E] text-white rounded-lg w-[calc(50%-4px)]"
+              >
+                <img src="./icons/telephone.png" class="w-4" alt="" />Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div
+          class="max-w-[432px] min-w-[335px] lg:max-w-none lg:w-[436px] p-8 bg-white shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl"
+        >
+          <div class="flex justify-between items-center">
+            <img
+              class="w-[60px] p-[14px] bg-[#FFE3E2] rounded-2xl"
+              src="./assets/ambulance.png"
+              alt=""
+            /><i
+              class="heart-icon fa-regular fa-heart text-[24px]"
+              style="color: #5c5c5c"
+            ></i>
+          </div>
+          <div>
+            <div class="mt-4">
+              <h2 class="name hind-madurai font-bold text-2xl">
+                অ্যাম্বুলেন্স
+              </h2>
+              <p class="sub-name roboto font-normal text-lg text-[#5C5C5C]">
+                Ambulance
+              </p>
+            </div>
+            <div class="my-6">
+              <h2 class="number roboto font-bold text-2xl">1994-999999</h2>
+              <h3
+                class="category inline-block hind-madurai text-lg font-normal text-[#5C5C5C] py-[6px] px-4 bg-[#F2F2F2] rounded-full"
+              >
+                স্বাস্থ্য
+              </h3>
+            </div>
+            <div class="flex gap-2 justify-between items-center">
+              <button
+                class="copy-btn roboto font-normal text-[16px] btn border-[#D4D6D5] rounded-lg w-[calc(50%-4px)] bg-white"
+              >
+                <img class="max-w-4" src="./icons/copy.png" alt="" />Copy
+              </button>
+              <button
+                class="call-btn roboto font-normal text-[16px] btn border-0 bg-[#00A63E] text-white rounded-lg w-[calc(50%-4px)]"
+              >
+                <img src="./icons/telephone.png" class="w-4" alt="" />Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div
+          class="max-w-[432px] min-w-[335px] lg:max-w-none lg:w-[436px] p-8 bg-white shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl"
+        >
+          <div class="flex justify-between items-center">
+            <img
+              class="w-[60px] p-[14px] bg-[#FFE3E2] rounded-2xl"
+              src="./assets/emergency.png"
+              alt=""
+            /><i
+              class="heart-icon fa-regular fa-heart text-[24px]"
+              style="color: #5c5c5c"
+            ></i>
+          </div>
+          <div>
+            <div class="mt-4">
+              <h2 class="name hind-madurai font-bold text-2xl">
+                নারী ও শিশু সহায়তা
+              </h2>
+              <p class="sub-name roboto font-normal text-lg text-[#5C5C5C]">
+                Women & Child Helpline
+              </p>
+            </div>
+            <div class="my-6">
+              <h2 class="number roboto font-bold text-2xl">109</h2>
+              <h3
+                class="category inline-block hind-madurai text-lg font-normal text-[#5C5C5C] py-[6px] px-4 bg-[#F2F2F2] rounded-full"
+              >
+                সহায়তা
+              </h3>
+            </div>
+            <div class="flex gap-2 justify-between items-center">
+              <button
+                class="copy-btn roboto font-normal text-[16px] btn border-[#D4D6D5] rounded-lg w-[calc(50%-4px)] bg-white"
+              >
+                <img class="max-w-4" src="./icons/copy.png" alt="" />Copy
+              </button>
+              <button
+                class="call-btn roboto font-normal text-[16px] btn border-0 bg-[#00A63E] text-white rounded-lg w-[calc(50%-4px)]"
+              >
+                <img src="./icons/telephone.png" class="w-4" alt="" />Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div
+          class="max-w-[432px] min-w-[335px] lg:max-w-none lg:w-[436px] p-8 bg-white shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl"
+        >
+          <div class="flex justify-between items-center">
+            <img
+              class="w-[60px] p-[14px] bg-[#FFE3E2] rounded-2xl"
+              src="./assets/emergency.png"
+              alt=""
+            /><i
+              class="heart-icon fa-regular fa-heart text-[24px]"
+              style="color: #5c5c5c"
+            ></i>
+          </div>
+          <div>
+            <div class="mt-4">
+              <h2 class="name hind-madurai font-bold text-2xl">দুদক</h2>
+              <p class="sub-name roboto font-normal text-lg text-[#5C5C5C]">
+                Anti-Corruption
+              </p>
+            </div>
+            <div class="my-6">
+              <h2 class="number roboto font-bold text-2xl">106</h2>
+              <h3
+                class="category inline-block hind-madurai text-lg font-normal text-[#5C5C5C] py-[6px] px-4 bg-[#F2F2F2] rounded-full"
+              >
+                সরকারি
+              </h3>
+            </div>
+            <div class="flex gap-2 justify-between items-center">
+              <button
+                class="copy-btn roboto font-normal text-[16px] btn border-[#D4D6D5] rounded-lg w-[calc(50%-4px)] bg-white"
+              >
+                <img class="max-w-4" src="./icons/copy.png" alt="" />Copy
+              </button>
+              <button
+                class="call-btn roboto font-normal text-[16px] btn border-0 bg-[#00A63E] text-white rounded-lg w-[calc(50%-4px)]"
+              >
+                <img src="./icons/telephone.png" class="w-4" alt="" />Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 7 -->
+        <div
+          class="max-w-[432px] min-w-[335px] lg:max-w-none lg:w-[436px] p-8 bg-white shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl"
+        >
+          <div class="flex justify-between items-center">
+            <img
+              class="w-[60px] p-[14px] bg-[#FFE3E2] rounded-2xl"
+              src="./assets/emergency.png"
+              alt=""
+            /><i
+              class="heart-icon fa-regular fa-heart text-[24px]"
+              style="color: #5c5c5c"
+            ></i>
+          </div>
+          <div>
+            <div class="mt-4">
+              <h2 class="name hind-madurai font-bold text-2xl">
+                বিদ্যুৎ বিভ্রাট
+              </h2>
+              <p class="sub-name roboto font-normal text-lg text-[#5C5C5C]">
+                Electricity Outage
+              </p>
+            </div>
+            <div class="my-6">
+              <h2 class="number roboto font-bold text-2xl">16216</h2>
+              <h3
+                class="category inline-block hind-madurai text-lg font-normal text-[#5C5C5C] py-[6px] px-4 bg-[#F2F2F2] rounded-full"
+              >
+                বিদ্যুৎ
+              </h3>
+            </div>
+            <div class="flex gap-2 justify-between items-center">
+              <button
+                class="copy-btn roboto font-normal text-[16px] btn border-[#D4D6D5] rounded-lg w-[calc(50%-4px)] bg-white"
+              >
+                <img class="max-w-4" src="./icons/copy.png" alt="" />Copy
+              </button>
+              <button
+                class="call-btn roboto font-normal text-[16px] btn border-0 bg-[#00A63E] text-white rounded-lg w-[calc(50%-4px)]"
+              >
+                <img src="./icons/telephone.png" class="w-4" alt="" />Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 8 -->
+        <div
+          class="max-w-[432px] min-w-[335px] lg:max-w-none lg:w-[436px] p-8 bg-white shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl"
+        >
+          <div class="flex justify-between items-center">
+            <img
+              class="w-[60px] p-[14px] bg-[#FFE3E2] rounded-2xl"
+              src="./assets/brac.png"
+              alt=""
+            /><i
+              class="heart-icon fa-regular fa-heart text-[24px]"
+              style="color: #5c5c5c"
+            ></i>
+          </div>
+          <div>
+            <div class="mt-4">
+              <h2 class="name hind-madurai font-bold text-2xl">ব্র্যাক</h2>
+              <p class="sub-name roboto font-normal text-lg text-[#5C5C5C]">
+                Brac
+              </p>
+            </div>
+            <div class="my-6">
+              <h2 class="number roboto font-bold text-2xl">16445</h2>
+              <h3
+                class="category inline-block hind-madurai text-lg font-normal text-[#5C5C5C] py-[6px] px-4 bg-[#F2F2F2] rounded-full"
+              >
+                এনজিও
+              </h3>
+            </div>
+            <div class="flex gap-2 justify-between items-center">
+              <button
+                class="copy-btn roboto font-normal text-[16px] btn border-[#D4D6D5] rounded-lg w-[calc(50%-4px)] bg-white"
+              >
+                <img class="max-w-4" src="./icons/copy.png" alt="" />Copy
+              </button>
+              <button
+                class="call-btn roboto font-normal text-[16px] btn border-0 bg-[#00A63E] text-white rounded-lg w-[calc(50%-4px)]"
+              >
+                <img src="./icons/telephone.png" class="w-4" alt="" />Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- card 9 -->
+        <div
+          class="max-w-[432px] min-w-[335px] lg:max-w-none lg:w-[436px] p-8 bg-white shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] rounded-xl"
+        >
+          <div class="flex justify-between items-center">
+            <img
+              class="w-[60px] p-[14px] bg-[#FFE3E2] rounded-2xl"
+              src="./assets/Bangladesh-Railway.png"
+              alt=""
+            /><i
+              class="heart-icon fa-regular fa-heart text-[24px]"
+              style="color: #5c5c5c"
+            ></i>
+          </div>
+          <div>
+            <div class="mt-4">
+              <h2 class="name hind-madurai font-bold text-2xl">
+                বাংলাদেশ রেলওয়ে
+              </h2>
+              <p class="sub-name roboto font-normal text-lg text-[#5C5C5C]">
+                Bangladesh Railway
+              </p>
+            </div>
+            <div class="my-6">
+              <h2 class="number roboto font-bold text-2xl">163</h2>
+              <h3
+                class="category inline-block hind-madurai text-lg font-normal text-[#5C5C5C] py-[6px] px-4 bg-[#F2F2F2] rounded-full"
+              >
+                পরিবহন
+              </h3>
+            </div>
+            <div class="flex gap-2 justify-between items-center">
+              <button
+                class="copy-btn roboto font-normal text-[16px] btn border-[#D4D6D5] rounded-lg w-[calc(50%-4px)] bg-white"
+              >
+                <img class="max-w-4" src="./icons/copy.png" alt="" />Copy
+              </button>
+              <button
+                class="call-btn roboto font-normal text-[16px] btn border-0 bg-[#00A63E] text-white rounded-lg w-[calc(50%-4px)]"
+              >
+                <img src="./icons/telephone.png" class="w-4" alt="" />Call
               </button>
             </div>
           </div>
         </div>
       </section>
       <!-- History Section -->
-      <section class="border-1 border-blue-700 lg:min-w-[400px]"></section>
+      <section class="border-1 border-blue-700 lg:min-w-[400px]">
+        <h2>histroy section</h2>
+      </section>
     </main>
     <script src="./index.js"></script>
   </body>
